@@ -1,0 +1,310 @@
+body {
+  background: #3d087b;
+  height: 100%;
+}
+.main-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+.col {
+  width: 46%;
+  margin: 2%;
+}
+.clock {
+  width: 20%;
+  height: 100px;
+  position: absolute;
+  top: 12px;
+  left: 8%;
+}
+
+.message-1 {
+  margin-left: 70%;
+  width: 200px;
+  height: 88px;
+  font-size: 18px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 30px #00000029;
+  opacity: 1;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+.digitalClock {
+  width: 40%;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 28px;
+  right: 9.6%;
+}
+.timer {
+  width: 98%;
+  height: 82px;
+  margin-top: 18px;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.time {
+  font-family: "Bubblegum Sans", cursive;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  color: #3d087bde;
+  margin-top: 20px;
+}
+#hours {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #3d087bde;
+  text-align: center;
+  background: url("timeline.jpg");
+}
+#mins {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #3d087bde;
+  text-align: center;
+  background: url("timeline.jpg");
+}
+#secs {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #3d087bde;
+  text-align: center;
+  background: url("timeline.jpg");
+}
+.t {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #dd39e9;
+  text-align: center;
+  background: url("timeline.jpg");
+}
+.t1 {
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+  background-color: #6b5ac1;
+  padding-top: 10px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  font-family: "Bubblegum Sans", cursive;
+}
+.colon {
+  font-size: 2.4rem;
+  margin-top: 10px;
+}
+.boxOne {
+  width: 78%;
+  height: 110px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.696);
+  opacity: 0.71;
+  position: absolute;
+  top: 24px;
+  right: 11%;
+  z-index: -1;
+}
+.boxTwo {
+  width: 70%;
+  height: 110px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.696);
+  opacity: 0.22;
+  position: absolute;
+  top: 34px;
+  right: 15%;
+  z-index: -2;
+}
+.timeTable {
+  width: 40.5%;
+  height: 290px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #ffffff;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 20px;
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.vertical {
+  width: 100%;
+  height: 25px;
+  margin: 4px 0 4px 18px;
+  border-left: 1px solid grey;
+}
+select {
+  width: 42%;
+  height: 28px;
+  border: 1px solid #ededed;
+  font: 16px Manrope;
+  color: #3d087bde;
+  border-radius: 4px;
+  position: absolute;
+  right: 8%;
+  margin-top: 4px;
+}
+.grab {
+  width: 40%;
+  height: 110px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 188px;
+  right: 9.5%;
+}
+#greetText {
+  width: 492px;
+  height: 38px;
+  font-size: 26px;
+  letter-spacing: 0px;
+  color: #8e53f0;
+  margin-left: 5px;
+  font-family: "Clicker Script", cursive;
+  font-weight: bold;
+}
+.text {
+  position: absolute;
+  margin-top: 6px;
+  left: 18%;
+  font: 19px Manrope;
+  color: #3d087b;
+}
+.morning {
+  width: 90%;
+  height: 80px;
+  background-color: rgba(97, 56, 136, 0.488);
+  border-radius: 10px;
+  position: relative;
+  top: 350px;
+  left: 80px;
+}
+#timeText {
+  color: #ffffff;
+  font-family: "Bubblegum Sans", cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 3px 3px 2px black;
+}
+
+.alarm {
+  width: 18%;
+  height: 44px;
+  background-image: linear-gradient(
+    113deg,
+    #6e54ec 0%,
+    #cb52f8 40%,
+    #fc5eff 81%,
+    #f1a7c5 100%
+  );
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 564px;
+  left: 105px;
+  padding-top: 2px;
+  border: none;
+}
+.a1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+}
+.alarm:hover .a1 {
+  display: none;
+}
+.alarm:hover::before {
+  content: "Party Time !!";
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+}
+.alarm:hover {
+  background-image: linear-gradient(
+    113deg,
+    #f1a7c5 0%,
+    #fc5eff 40%,
+    #cb52f8 81%,
+    #6e54ec 100%
+  );
+}
+.guide {
+  width: 22%;
+  height: 160px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgba(97, 56, 136, 0.488);
+  position: absolute;
+  top: 565px;
+  left: 27.5%;
+}
+.none {
+  padding: 12px 0px 0px 15px;
+  color: #f06af9;
+  font-family: "Comfortaa", cursive;
+  font-size: 14px;
+}
+#changeImage {
+  width: 40%;
+  height: 320px;
+  border-radius: 10px;
+  position: absolute;
+  top: 316px;
+  right: 9.5%;
+}
+.message-2 {
+  margin-top: 70%;
+  width: 250px;
+  height: 88px;
+  font-size: 18px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 30px #00000029;
+  opacity: 1;
+  padding: 3px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1344px) {
+  .main-container {
+    width: 90%;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+  }
+  .col {
+    width: 26%;
+    margin: 2%;
+  }
+}
