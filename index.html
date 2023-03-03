@@ -17,10 +17,10 @@
         <div class="col col-1">
             <div class="row row-1">
                 <div class="clock">
-                    <img src="./clock-logo/clock_logo.png" alt="clock" width="93%">
+                    <img src="./clock-logo/clock_logo.png" alt="clock" >
                 </div>
                 <div class="message-1">
-                    <p>The message and Image will change according to the time</p>
+                    <p class="message">The message and Image will change according to the time</p>
                 </div>        
             </div>
             <div class="row row-2">
@@ -37,7 +37,7 @@
                     </div>
                     <div class="vertical"></div>
                     <div class="lunch">
-                        <img src="./img/lunch_time.svg" alt="" srcset="">
+                        <img src="./img/lunch_time.svg" alt="" >
                         <span class="text">Set lunch time</span>
                         <select name="selectLunch" class="selectOne" id="slotTwo">
                             <option value="12">12 PM - 1 PM</option>
@@ -84,10 +84,9 @@
                 </div>
             </div>
             <div class="row row-4">
-                <button class="alarm" onclick="givePower()"><span class="a1">Set Alarm</span></button>
-                <div class="message-2">
-                    <p>Time will be updated here after clicking on "Set Alarm"</p>
-                </div>
+                
+                <div id="alarm">
+                    <button class="alarm" onclick="givePower()"><span class="a1">Set Alarm</span></button>
                 <div class="guide">
                     <div class="none">
                         <span class="g1">Wake Up Time : </span><span id="wakeTime">8 AM - 9 AM</span><br><br>
@@ -96,23 +95,28 @@
                         <span class="g4">Night Time : </span><span id="nightTime">8 PM - 9 PM</span><br><br>
                     </div>
                 </div>
+                </div>
+                <div class="message-2">
+                    <p class="message">Time will be updated here after clicking on "Set Alarm"</p>
+                </div>
+                
             </div>
         </div>
         <div class="col col-2">
             <div class="row row-1">
-                <div class="digitalClock">
-            <div class="timer">
-                <div class="time">TIME</div>
-                <div id="hours" class="t">00 <br> hours</div>
-                <div class="colon">:</div>
-                <div id="mins" class="t">00 <br> mins</div>
-                <div class="colon">:</div>
-                <div id="secs" class="t">00 <br> secs</div>
-                <div id="session" class="t1">AM</div>
+            <div class="digitalClock">
+                <div class="timer">
+                    <div class="time">TIME</div>
+                    <div id="hours" class="t">00 <br> hours</div>
+                    <div class="colon">:</div>
+                    <div id="mins" class="t">00 <br> mins</div>
+                    <div class="colon">:</div>
+                    <div id="secs" class="t">00 <br> secs</div>
+                    <div id="session" class="t1">AM</div>
+                </div>
+                <div class="boxOne"></div>
+                <div class="boxTwo"></div>
             </div>
-            <div class="boxOne"></div>
-            <div class="boxTwo"></div>
-        </div>
             </div>
             <div class="row row-2">
                 <div class="grab">
@@ -121,7 +125,7 @@
             </div>
             <div class="row row-3">
                 <div id="timeImage">
-                    <img id="changeImage" src="./img/Component.png" alt="">
+                    <img id="changeImage" src="./img/Component.png" alt="img">
                 </div>
             </div>
         </div>

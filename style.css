@@ -12,18 +12,20 @@ body {
 .col {
   width: 46%;
   margin: 2%;
+  /* background-color: red; */
 }
+/* Clock Logo */
 .clock {
-  width: 20%;
+  width: 200px;
   height: 100px;
   position: absolute;
   top: 12px;
   left: 8%;
 }
-
+/* Message-1 */
 .message-1 {
-  margin-left: 70%;
-  width: 200px;
+  margin-left: 55%;
+  width: 220px;
   height: 88px;
   font-size: 18px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -35,13 +37,13 @@ body {
 }
 
 .digitalClock {
-  width: 40%;
+  width: 520px;
   height: 120px;
   border-radius: 10px;
   background-color: #ffffff;
-  position: absolute;
-  top: 28px;
-  right: 9.6%;
+
+  margin: 10px 0 10px 0;
+  padding-top: 12px;
 }
 .timer {
   width: 98%;
@@ -124,9 +126,8 @@ body {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.696);
   opacity: 0.71;
-  position: absolute;
-  top: 24px;
-  right: 11%;
+  margin-top: -70px;
+  margin-left: 50px;
   z-index: -1;
 }
 .boxTwo {
@@ -135,29 +136,35 @@ body {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.696);
   opacity: 0.22;
-  position: absolute;
-  top: 34px;
-  right: 15%;
+  margin-top: -90px;
+  margin-left: 70px;
   z-index: -2;
 }
+/* Tble of Timing */
 .timeTable {
-  width: 40.5%;
-  height: 290px;
+  width: 80%;
+  height: 300px;
   box-sizing: border-box;
   border-radius: 10px;
   background: #ffffff;
   display: inline-block;
-  margin-top: 40px;
+
   padding: 20px 20px;
-  position: absolute;
-  top: 120px;
-  left: 120px;
+  position: relative;
+  top: 25px;
+  left: 10%;
 }
 .vertical {
   width: 100%;
   height: 25px;
   margin: 4px 0 4px 18px;
   border-left: 1px solid grey;
+}
+.wake,
+.nap,
+.lunch,
+.night {
+  display: flex;
 }
 select {
   width: 42%;
@@ -166,18 +173,17 @@ select {
   font: 16px Manrope;
   color: #3d087bde;
   border-radius: 4px;
-  position: absolute;
-  right: 8%;
-  margin-top: 4px;
+  position: relative;
+  margin-left: 50%;
 }
 .grab {
-  width: 40%;
-  height: 110px;
+  width: 520px;
+  height: 100px;
   border-radius: 10px;
   background-color: #ffffff;
-  position: absolute;
-  top: 188px;
-  right: 9.5%;
+  position: relative;
+  top: 30px;
+  left: 8px;
 }
 #greetText {
   width: 492px;
@@ -196,14 +202,15 @@ select {
   font: 19px Manrope;
   color: #3d087b;
 }
+
 .morning {
-  width: 90%;
+  width: 500px;
   height: 80px;
   background-color: rgba(97, 56, 136, 0.488);
   border-radius: 10px;
   position: relative;
-  top: 350px;
-  left: 80px;
+  top: 50px;
+  left: 50px;
 }
 #timeText {
   color: #ffffff;
@@ -215,9 +222,12 @@ select {
   text-align: center;
   text-shadow: 3px 3px 2px black;
 }
-
+#alarm {
+  display: flex;
+}
+/* Alarm */
 .alarm {
-  width: 18%;
+  width: 300px;
   height: 44px;
   background-image: linear-gradient(
     113deg,
@@ -228,9 +238,9 @@ select {
   );
   cursor: pointer;
   border-radius: 5px;
-  position: absolute;
-  top: 564px;
-  left: 105px;
+  position: relative;
+  top: 60px;
+  left: 45px;
   padding-top: 2px;
   border: none;
 }
@@ -260,14 +270,14 @@ select {
   );
 }
 .guide {
-  width: 22%;
+  width: 220px;
   height: 160px;
+  position: relative;
+  top: 60px;
+  left: 55px;
   border-radius: 5px;
   box-sizing: border-box;
   background-color: rgba(97, 56, 136, 0.488);
-  position: absolute;
-  top: 565px;
-  left: 27.5%;
 }
 .none {
   padding: 12px 0px 0px 15px;
@@ -276,15 +286,15 @@ select {
   font-size: 14px;
 }
 #changeImage {
-  width: 40%;
-  height: 320px;
+  width: 500px;
+  height: 400px;
   border-radius: 10px;
-  position: absolute;
-  top: 316px;
-  right: 9.5%;
+  position: relative;
+  top: 46px;
+  left: 5px;
 }
 .message-2 {
-  margin-top: 70%;
+  margin-top: 10px;
   width: 250px;
   height: 88px;
   font-size: 18px;
@@ -295,16 +305,117 @@ select {
   padding: 3px;
   border-radius: 20px;
 }
-@media screen and (max-width: 1344px) {
-  .main-container {
-    width: 90%;
-    height: auto;
+@media screen and (max-width: 1034px) {
+  .message-1,
+  .message-2 {
+    visibility: hidden;
+  }
+  .clock {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 12px;
+    left: 2%;
+  }
+  .timeTable {
     position: relative;
-    box-sizing: border-box;
+    left: 5%;
+  }
+  .morning {
+    position: relative;
+    top: 50px;
+    left: -20px;
+    width: 440px;
+  }
+  .digitalClock {
+    margin-left: -10px;
+  }
+  #alarm {
+    display: block;
+  }
+  .guide {
+    position: relative;
+    top: 80px;
+    left: 55px;
+  }
+  .grab {
+    width: 500px;
+    padding-top: 4px;
+    position: relative;
+    top: 30px;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .main-container {
     display: block;
   }
   .col {
-    width: 26%;
-    margin: 2%;
+    width: 90%;
+  }
+  .clock {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 12px;
+    left: 2%;
+  }
+  .timeTable {
+    width: 100%;
+  }
+  .morning {
+    position: relative;
+    top: 50px;
+    left: 30px;
+    width: 100%;
+  }
+  .digitalClock {
+    margin-left: 10px;
+  }
+  #alarm {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .alarm {
+    width: 250px;
+    position: relative;
+    top: 120px;
+    left: 5px;
+  }
+  .guide {
+    position: relative;
+    top: 80px;
+    left: 55px;
+  }
+  .col-2 {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 594px) {
+  .digitalClock {
+    position: relative;
+    left: 0;
+    width: 480px;
+  }
+  .col-2 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .timeTable {
+    width: 100%;
+  }
+  .col {
+    width: 98%;
+  }
+  .guide {
+    position: relative;
+    top: 80px;
+    left: 55px;
+    height: 200px;
+  }
+  .col-2 {
+    margin-left: 0;
   }
 }
