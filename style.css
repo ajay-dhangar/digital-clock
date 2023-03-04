@@ -1,32 +1,18 @@
 body {
   background: #3d087b;
-  height: 100%;
 }
-.main-container {
-  width: 100%;
-  height: auto;
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-}
-.col {
-  width: 46%;
-  margin: 2%;
-  /* background-color: red; */
-}
-/* Clock Logo */
+/* Clock logo */
 .clock {
   width: 200px;
   height: 100px;
-  position: absolute;
-  top: 12px;
-  left: 8%;
+  margin-top: 20px;
 }
 /* Message-1 */
 .message-1 {
-  margin-left: 55%;
   width: 220px;
   height: 88px;
+  margin-top: 20px;
+  margin-left: 20%;
   font-size: 18px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -35,24 +21,23 @@ body {
   padding: 3px;
   border-radius: 20px;
 }
-
 .digitalClock {
-  width: 520px;
+  margin-top: 20px;
+  width: 90%;
   height: 120px;
   border-radius: 10px;
   background-color: #ffffff;
-
-  margin: 10px 0 10px 0;
+  margin-left: 20px;
   padding-top: 12px;
 }
 .timer {
   width: 98%;
   height: 82px;
-  margin-top: 18px;
-  margin-left: 4px;
+  /* margin-top: 18px; */
+  /* margin-left: 4px; */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .time {
   font-family: "Bubblegum Sans", cursive;
@@ -70,7 +55,6 @@ body {
   font-size: 1.6rem;
   color: #3d087bde;
   text-align: center;
-  
 }
 #mins {
   width: 80px;
@@ -103,17 +87,17 @@ body {
   font-size: 1.6rem;
   color: #dd39e9;
   text-align: center;
-  
 }
 .t1 {
   text-align: center;
   align-content: center;
   color: #ffffff;
+  margin-top: 18px;
   background-color: #6b5ac1;
   padding-top: 10px;
   border-radius: 5px;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   font-family: "Bubblegum Sans", cursive;
 }
 .colon {
@@ -143,19 +127,18 @@ body {
 /* Tble of Timing */
 .timeTable {
   width: 80%;
-  height: 300px;
+  height: 330px;
   box-sizing: border-box;
   border-radius: 10px;
   background: #ffffff;
   display: inline-block;
-
   padding: 20px 20px;
   position: relative;
   top: 25px;
   left: 10%;
 }
 .vertical {
-  width: 100%;
+  width: 100px;
   height: 25px;
   margin: 4px 0 4px 18px;
   border-left: 1px solid grey;
@@ -176,25 +159,6 @@ select {
   position: relative;
   margin-left: 50%;
 }
-.grab {
-  width: 520px;
-  height: 100px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  position: relative;
-  top: 30px;
-  left: 8px;
-}
-#greetText {
-  width: 492px;
-  height: 38px;
-  font-size: 26px;
-  letter-spacing: 0px;
-  color: #8e53f0;
-  margin-left: 5px;
-  font-family: "Clicker Script", cursive;
-  font-weight: bold;
-}
 .text {
   position: absolute;
   margin-top: 6px;
@@ -202,23 +166,40 @@ select {
   font: 19px Manrope;
   color: #3d087b;
 }
+.grab {
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+#greetText {
+  width: 90%;
+  height: 38px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #8e53f0;
 
+  font-family: "Clicker Script", cursive;
+  font-weight: bold;
+}
 .morning {
-  width: 500px;
+  width: 90%;
   height: 80px;
   background-color: rgba(97, 56, 136, 0.488);
   border-radius: 10px;
-  position: relative;
-  top: 50px;
-  left: 50px;
+  margin-top: 80px;
+  margin-left: 10px;
 }
 #timeText {
   color: #ffffff;
   font-family: "Bubblegum Sans", cursive;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 22px;
   text-align: center;
   text-shadow: 3px 3px 2px black;
 }
@@ -227,7 +208,7 @@ select {
 }
 /* Alarm */
 .alarm {
-  width: 300px;
+  width: 40%;
   height: 44px;
   background-image: linear-gradient(
     113deg,
@@ -240,7 +221,7 @@ select {
   border-radius: 5px;
   position: relative;
   top: 60px;
-  left: 45px;
+  left: 25px;
   padding-top: 2px;
   border: none;
 }
@@ -270,8 +251,8 @@ select {
   );
 }
 .guide {
-  width: 220px;
-  height: 160px;
+  width: 42%;
+  height: 200px;
   position: relative;
   top: 60px;
   left: 55px;
@@ -285,13 +266,14 @@ select {
   font-family: "Comfortaa", cursive;
   font-size: 14px;
 }
-#changeImage {
-  width: 500px;
+#timeImage {
+  width: 100%;
   height: 400px;
   border-radius: 10px;
-  position: relative;
-  top: 46px;
-  left: 5px;
+  margin-top: 50px;
+}
+#changeImage {
+  width: 100%;
 }
 .message-2 {
   margin-top: 10px;
@@ -305,117 +287,20 @@ select {
   padding: 3px;
   border-radius: 20px;
 }
-@media screen and (max-width: 1034px) {
-  .message-1,
-  .message-2 {
-    visibility: hidden;
-  }
-  .clock {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    top: 12px;
-    left: 2%;
-  }
-  .timeTable {
-    position: relative;
-    left: 5%;
-  }
-  .morning {
-    position: relative;
-    top: 50px;
-    left: -20px;
-    width: 440px;
-  }
-  .digitalClock {
-    margin-left: -10px;
-  }
-  #alarm {
-    display: block;
-  }
-  .guide {
-    position: relative;
-    top: 80px;
-    left: 55px;
-  }
-  .grab {
-    width: 500px;
-    padding-top: 4px;
-    position: relative;
-    top: 30px;
-    right: 5px;
-  }
-}
-
-@media screen and (max-width: 844px) {
-  .main-container {
-    display: block;
-  }
-  .col {
-    width: 90%;
-  }
-  .clock {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    top: 12px;
-    left: 2%;
-  }
-  .timeTable {
-    width: 100%;
-  }
-  .morning {
-    position: relative;
-    top: 50px;
-    left: 30px;
-    width: 100%;
-  }
-  .digitalClock {
-    margin-left: 10px;
-  }
-  #alarm {
-    display: flex;
-    justify-content: space-evenly;
-  }
+@media screen and (max-width: 994px) {
   .alarm {
     width: 250px;
     position: relative;
     top: 120px;
     left: 5px;
+    width: 150px;
+  }
+  .message-1,
+  .message-2 {
+    visibility: hidden;
   }
   .guide {
-    position: relative;
-    top: 80px;
-    left: 55px;
-  }
-  .col-2 {
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 594px) {
-  .digitalClock {
-    position: relative;
-    left: 0;
-    width: 480px;
-  }
-  .col-2 {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 410px) {
-  .timeTable {
-    width: 100%;
-  }
-  .col {
-    width: 98%;
-  }
-  .guide {
-    position: relative;
-    top: 80px;
-    left: 55px;
-    height: 200px;
-  }
-  .col-2 {
-    margin-left: 0;
+    width: 42%;
+    height: 100%;
   }
 }
