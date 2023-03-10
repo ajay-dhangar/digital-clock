@@ -5,6 +5,7 @@ function showTime() {
   var secs = showDisplayTime.getSeconds();
   var session = document.getElementById("session");
   var hr = showDisplayTime.getHours();
+  var image = document.getElementById("changeImage");
 
   if (hours >= 12) {
     session.innerHTML = "PM";
