@@ -19,13 +19,17 @@ function showTime() {
   var hr = showDisplayTime.getHours();
 
   // for image
-  if (hours > 8 && hours < 18) {
-    image = "./img/skyline-daytime.jpg";
+  if (hours > 8 && hours < 16) {
+    image = "./img/skyline-daytime.jpg"; // 8:00AM - 4:00PM
   } else {
-    if (5 <= hours && hours <= 8) {
-      image = "./img/Component.png";
+    if (hours > 16 && hours < 19) {
+      image = "./img/evening.jpg"; // 4:00PM - 7:00PM
     } else {
-      image = "./img/night.png";
+      if (5 <= hours && hours <= 8) {
+        image = "./img/Component.png"; // 5:00AM - 8:00AM
+      } else {
+        image = "./img/night.png"; // 7:00PM - 5:00AM
+      }
     }
   }
 
