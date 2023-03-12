@@ -1,3 +1,15 @@
+let pera1 = document.getElementById("pera1");
+let pera2 = document.getElementById("pera2");
+function function1() {
+  pera1.innerHTML = `The message and Image will change according to the time`;
+  pera1.style.backgroundColor = "#fff";
+  pera1.style.borderRadius = "10px";
+}
+function function2() {
+  pera2.innerHTML = `Time will be updated here after clicking on  "Set Alarm"`;
+  pera2.style.backgroundColor = "#fff";
+  pera2.style.borderRadius = "10px";
+}
 function showTime() {
   var showDisplayTime = new Date();
   var hours = showDisplayTime.getHours();
@@ -5,7 +17,17 @@ function showTime() {
   var secs = showDisplayTime.getSeconds();
   var session = document.getElementById("session");
   var hr = showDisplayTime.getHours();
-  var image = document.getElementById("changeImage");
+
+  // for image
+  if (hours > 8 && hours < 18) {
+    image = "./img/skyline-daytime.jpg";
+  } else {
+    if (5 <= hours && hours <= 8) {
+      image = "./img/Component.png";
+    } else {
+      image = "./img/night.png";
+    }
+  }
 
   if (hours >= 12) {
     session.innerHTML = "PM";
@@ -26,8 +48,11 @@ function showTime() {
     secs = "0" + secs;
   }
 
+  // set the image source attribute to the correct image
+  document.getElementById("changeImage").src = image;
   document.getElementById("hours").innerHTML = hours + `<br>hours`;
   document.getElementById("mins").innerHTML = mins + `<br>mins`;
   document.getElementById("secs").innerHTML = secs + `<br>secs`;
+  document.getElementById("changeImage").style.borderRadius = "10px";
 }
 setInterval(showTime, 1000);

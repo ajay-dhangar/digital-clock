@@ -14,12 +14,7 @@ body {
   margin-top: 20px;
   margin-left: 20%;
   font-size: 18px;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 30px #00000029;
-  opacity: 1;
   padding: 3px;
-  border-radius: 20px;
 }
 .digitalClock {
   margin-top: 20px;
@@ -166,21 +161,21 @@ select {
 }
 .grab {
   width: 90%;
-  height: 100px;
+  height: 20%;
   border-radius: 10px;
   background-color: #ffffff;
   margin-top: 100px;
   margin-left: 20px;
-  padding-top: 30px;
+  padding-top: 5px;
+  font: normal normal 900 30px/40px Bauhaus Hv BT;
+  letter-spacing: 0px;
 }
 #greetText {
-  width: 90%;
-  height: 38px;
-  font-size: 22px;
-  letter-spacing: 0px;
   color: #8e53f0;
-  font-family: "Clicker Script", cursive;
+  font-family: "Bubblegum Sans", cursive;
   font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 22px;
 }
 .morning {
   width: 90%;
@@ -189,6 +184,8 @@ select {
   border-radius: 10px;
   margin-top: 80px;
   margin-left: 10px;
+  font: normal normal 900 30px/40px Bauhaus Hv BT;
+  letter-spacing: 0px;
 }
 #timeText {
   color: #ffffff;
@@ -206,7 +203,7 @@ select {
 }
 /* Alarm */
 .alarm {
-  width: 40%;
+  width: 180px;
   height: 44px;
   background-image: linear-gradient(
     113deg,
@@ -219,7 +216,7 @@ select {
   border-radius: 5px;
   position: relative;
   top: 60px;
-  left: 25px;
+  left: 5px;
   padding-top: 2px;
   border: none;
 }
@@ -248,18 +245,24 @@ select {
     #6e54ec 100%
   );
 }
+.message-2 {
+  width: 180px;
+  height: 80px;
+  margin-left: 10px;
+  margin-top: 100px;
+}
 .guide {
   width: 42%;
   height: 200px;
-  position: relative;
-  top: 60px;
-  left: 55px;
+  margin-top: 35px;
+  margin-left: 10px;
   border-radius: 5px;
   box-sizing: border-box;
+  margin-bottom: 10px;
   background-color: rgba(97, 56, 136, 0.488);
 }
 .none {
-  padding: 12px 0px 0px 15px;
+  padding: 10px 0px 0px 10px;
   color: #f06af9;
   font-family: "Comfortaa", cursive;
   font-size: 14px;
@@ -273,18 +276,10 @@ select {
 #changeImage {
   width: 100%;
 }
-.message-2 {
-  margin-top: 10px;
-  width: 250px;
-  height: 88px;
-  font-size: 18px;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 30px #00000029;
-  opacity: 1;
-  padding: 3px;
-  border-radius: 20px;
+.set {
+  justify-content: space-evenly;
 }
+
 @media screen and (max-width: 994px) {
   .alarm {
     position: relative;
@@ -292,13 +287,16 @@ select {
     left: 0;
     width: 150px;
   }
-  .message-1,
   .message-2 {
-    visibility: hidden;
+    margin-left: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px;
   }
+
   .guide {
-    width: 80%;
+    width: 60%;
     height: 70%;
-    margin-top: 80px;
+    margin-top: 8px;
   }
 }
