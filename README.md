@@ -1,4 +1,4 @@
-# digital-clock
+# Digital Clock
 
 ## Time: 6:00 AM - 8:00 AM (Good Morning)
 
