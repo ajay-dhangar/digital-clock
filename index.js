@@ -8,19 +8,17 @@ let slotFour = document.getElementById("slotFour").value;
 function function1() {
   let pera1 = document.getElementById("pera1");
   pera1.innerHTML = `The message and Image will change according to the time`;
-  pera1.style.backgroundColor = "#fff";
-  pera1.style.borderRadius = "10px";
-  pera1.style.height = "100%";
-  pera1.style.padding = "8px";
+  pera1.style.cssText =
+    "height: auto; padding: 8px; border-Radius:10px; background-color: #fff;";
 }
 function function2() {
   // ================ for Messages =============
   let pera2 = document.getElementById("pera2");
   pera2.innerHTML = `Time will be updated here after clicking on  "Set Alarm"`;
-  pera2.style.backgroundColor = "#fff";
-  pera2.style.borderRadius = "10px";
-  pera2.style.height = "88px";
-  pera2.style.padding = "8px";
+
+  pera2.style.cssText =
+    "height: 88px; padding: 8px; border-Radius:10px; background-color: #fff;";
+
   // Check if the alarm should be triggered
   const slotOne = document.getElementById("slotOne").value;
   const slotTwo = document.getElementById("slotTwo").value;
