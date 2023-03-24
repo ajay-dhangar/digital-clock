@@ -2,6 +2,10 @@ let pera1 = document.getElementById("pera1");
 let pera2 = document.getElementById("pera2");
 let timeText = document.getElementById("timeText");
 let greetText = document.getElementById("greetText");
+let slotOne = document.getElementById("slotOne").value;
+let slotTwo = document.getElementById("slotTwo").value;
+let slotThree = document.getElementById("slotThree").value;
+let slotFour = document.getElementById("slotFour").value;
 function function1() {
   pera1.innerHTML = `The message and Image will change according to the time`;
   pera1.style.backgroundColor = "#fff";
@@ -10,6 +14,26 @@ function function1() {
   pera1.style.padding = "8px";
 }
 function function2() {
+  setInterval(() => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (slotOne === `${hours}`) {
+      const audio = new Audio("./music/motivation.mp3");
+      audio.play();
+    }
+    if (slotTwo === `${hours}`) {
+      const audio = new Audio("./music/motivation.mp3");
+      audio.play();
+    }
+    if (slotThree === `${hours}`) {
+      const audio = new Audio("./music/motivation.mp3");
+      audio.play();
+    }
+    if (slotFour === `${hours}`) {
+      const audio = new Audio("./music/motivation.mp3");
+      audio.play();
+    }
+  }, 1000);
   pera2.innerHTML = `Time will be updated here after clicking on  "Set Alarm"`;
   pera2.style.backgroundColor = "#fff";
   pera2.style.borderRadius = "10px";
