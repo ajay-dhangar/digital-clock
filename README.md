@@ -5,6 +5,8 @@
 
 ## Time: 9:00 AM - 4:00 PM (Good Afternoon)
 
+![ajay-dhangar-github-io-digital-clock-Afternoon](https://user-images.githubusercontent.com/99037494/227425340-3f300350-121e-40ea-824c-aea8065115ca.png)
+
 
 ## Time: 4:00 PM - 7:00 PM (Good Evening)
 
