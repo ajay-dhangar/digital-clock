@@ -39,6 +39,12 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
+@media screen and (max-width: 431px) {
+  .message-1 {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
 /* ---- Message style End ---- */
 
 /*------- logo and message style End ------*/
@@ -146,6 +152,7 @@ body {
   margin-left: 80px;
   z-index: 1;
 }
+
 @media screen and (max-width: 675px) {
   .row-1,
   .row-2 {
@@ -298,14 +305,21 @@ select {
   border-radius: 10px;
 }
 .guide {
-  width: 42%;
-  height: 200px;
+  width: 50%;
+  height: auto;
   margin-top: 35px;
   margin-left: 10px;
   border-radius: 5px;
   box-sizing: border-box;
+  padding: 10px;
   margin-bottom: 10px;
   background-color: rgba(97, 56, 136, 0.488);
+}
+@media screen and (max-width: 507px) {
+  .guide {
+    width: 100%;
+    text-align: center;
+  }
 }
 .none {
   padding: 10px 0px 0px 10px;
