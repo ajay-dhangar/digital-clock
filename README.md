@@ -2,6 +2,8 @@
 
 ## Time: 6:00 AM - 9:00 AM (Good Morning)
 
+![screencapture-ajay-dhangar-github-io-digital-clock-2023-04-20-08_17_59](https://user-images.githubusercontent.com/99037494/233245790-cd256215-6836-4b50-b260-20de39a28812.png)
+
 
 ## Time: 9:00 AM - 4:00 PM (Good Afternoon)
 
