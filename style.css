@@ -11,22 +11,27 @@ body {
 .container {
   width: auto;
   height: auto;
+  
 }
 
 /* ---- for logo and Real Time Style start ---- */
 .row-1,
 .row-2 {
   display: flex;
+  justify-content: center;
+  
 }
 
 .row-1 .col,
 .row-2 .col {
-  width: 50%;
+  width: 40%;
+  height: auto;
 }
 
 /*------- logo and message style start ------*/
 .row-1 .col-1 img {
   margin: 10px;
+  
 }
 
 /* ---- Message style start ---- */
@@ -160,6 +165,7 @@ body {
 /* ---Row-2 style--- */
 .row-2 .col {
   padding: 20px;
+  margin-top: auto;
 }
 /* Tble of Timing */
 .timeTable {

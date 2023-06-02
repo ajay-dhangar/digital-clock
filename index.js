@@ -41,16 +41,16 @@ function function2() {
     wakeTime.innerHTML;
   } else if (hours === parseInt(slotTwo)) {
     image = "./img/Group 5183.png"; // 10:00AM - 2:00PM
-    timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
-    greetText.innerHTML = `LET'S HAVE SOME LUNCH !!`;
+    // timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
+    // greetText.innerHTML = `LET'S HAVE SOME LUNCH !!`;
   } else if (hours === parseInt(slotThree)) {
     image = "./img/evening.png"; // 4:00PM - 7:00PM
-    timeText.innerHTML = `GOOD EVENING !!`;
-    greetText.innerHTML = `STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`;
+    // timeText.innerHTML = `GOOD EVENING !!`;
+    // greetText.innerHTML = `STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`;
   } else if (hours === parseInt(slotFour)) {
     image = "./img/night.png"; // 7:00PM - 5:00AM
-    timeText.innerHTML = `GOOD NIGHT !!`;
-    greetText.innerHTML = `CLOSE YOUR EYES AND GO TO SLEEP`;
+    // timeText.innerHTML = `GOOD NIGHT !!`;
+    // greetText.innerHTML = `CLOSE YOUR EYES AND GO TO SLEEP`;
   }
   // set the image source attribute to the correct image
   document.getElementById("changeImage").src = image;
@@ -87,32 +87,32 @@ function showTime() {
   document.getElementById("changeImage").style.borderRadius = "10px";
 }
 setInterval(showTime, 1000);
-// function showChanges() {
-//   let Time = new Date();
-//   let hour = Time.getHours();
+function showChanges() {
+  let Time = new Date();
+  let hour = Time.getHours();
 
-//   // 6:00AM - 10:00AM
-//   if (hour > 5 && hour < 11) {
-//     image = "./img/Component.png";
-//   }
-//   // 10:00AM - 2:00PM
-//   else if (hour > 10 && hour < 15) {
-//     image = "./img/Group 5183.png";
-//     timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
-//     greetText.innerHTML = `LET'S HAVE SOME LUNCH !!`;
-//   } else if (hour > 14 && hour < 19) {
-//     image = "./img/evening.png"; // 4:00PM - 7:00PM
-//     timeText.innerHTML = `GOOD EVENING !!`;
-//     greetText.innerHTML = `STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`;
-//   }
-//   // 7:00PM - 5:00AM
-//   else {
-//     image = "./img/night.png";
-//     timeText.innerHTML = `GOOD NIGHT !!`;
-//     greetText.innerHTML = `CLOSE YOUR EYES AND GO TO SLEEP`;
-//   }
+  // 6:00AM - 10:00AM
+  if (hour > 5 && hour < 11) {
+    image = "./img/Component.png";
+  }
+  // 10:00AM - 2:00PM
+  else if (hour > 10 && hour < 15) {
+    // image = "./img/Group 5183.png";
+    timeText.innerHTML = `GOOD AFTERNOON !! TAKE SOME SLEEP`;
+    greetText.innerHTML = `LET'S HAVE SOME LUNCH !!`;
+  } else if (hour > 14 && hour < 19) {
+    // image = "./img/evening.png"; // 4:00PM - 7:00PM
+    timeText.innerHTML = `GOOD EVENING !!`;
+    greetText.innerHTML = `STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!`;
+  }
+  // 7:00PM - 5:00AM
+  else {
+    // image = "./img/night.png";
+    timeText.innerHTML = `GOOD NIGHT !!`;
+    greetText.innerHTML = `CLOSE YOUR EYES AND GO TO SLEEP`;
+  }
 
-//   // set the image source attribute to the correct image
-//   document.getElementById("changeImage").src = image;
-// }
-// setInterval(showChanges, 1000);
+  // set the image source attribute to the correct image
+  // document.getElementById("changeImage").src = image;
+}
+setInterval(showChanges, 1000);
